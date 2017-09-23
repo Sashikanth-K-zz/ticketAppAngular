@@ -1,0 +1,13 @@
+<div>
+    <div ng-repeat="obj in screenList">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{obj.id}}</h3>
+            </div>
+            <div class="panel-body">
+                <h3>{{obj.availbleSeats}}</h3>
+            </div>
+            <button type="button" ng-href="#/book/{{obj.id}}" class="btn btn-primary" ng-show="obj.availableSeats > 0">Book</button>
+        </div>
+    </div>
+</div>
